@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="style/nullstyle.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="image/free-icon-animal-kingdom-1752658.ico" 
+    type="image/x-icon">
+    <title>Модуль Turtle</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li><a href="#p1" class="menu__item">Теория</a></li>
+                        <li><a href="#p2" class="menu__item">Практика</a></li>
+                        <li><a href="#" class="menu__item">Еще что-нибудь</a></li>
+                    </ul>
+                </nav>
+                <div class="header__info">
+                    <div class="header__exercise">
+                       <a href="https://inf-ege.sdamgia.ru/test?theme=316" class="exercise">ЕГЭ</a> задание 6
+                    </div>
+                    <h1 class="header__title">Модуль <span class="turtle">Turtle</span> </h1>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="container">
+                <div class="theory">
+                    <div id="p1" class="theory__text" >
+                        <p><span class="bold-green"> Turtle </span> это модуль для Питон, позволяющий создавать графические объекты, риснуки в специальном окне. Модуль <span class="bold-green">Turtle</span> можно использовать для создания игр на Питоне.</p>
+                        <p class="light">Для работы с исполнителем Черепаха сначала нужно подключить модуль <span class="bold-green"> Turtle</span></p>
+                        <div class="theory__input">
+                           <span class="light__input"> from turtle import <span class="red"> * </span></span>
+                        </div>
+                        <p> На самом деле у этой команды более широкий функционал. Эта команда
+                        выставляет Черепаху в начальное положение, сбрасывает все параметры на значения
+                        по умолчанию и стирает все, что было нарисовано до этого </p>
+                        <p>Теперь, после запуска программы мы увидим окно «Python Turtle Graphics».
+                        В центре окна будет отображаться перо в виде стрелки, повернутой вправо. Это
+                        начальное положение исполнителя «Черепаха». Координаты точки (0,0). При
+                        рисовании используется <a href="https://function-x.ru/geometry_coordinates_cartesian.html" title="Перейти" target="_blank" class="system"> Декартова система координат</a>.
+                        <div class="main__command container">
+                            <h2 class="command">
+                                Список команд исполнителя для рисования
+                            </h2>
+                            <p><span class="command__py"> up()</span> – поднять перо. Используется в случае, если необходимо переместить
+                            Черепаху без оставления следа рисования.</p>
+                            <div class="theory__input">
+                                <span class="light__input"> turtle.up() </span>
+                            </div>
+                            <p><span class="command__py"> down()</span> – опустить перо. Используется для того, чтобы при перемещении
+                            Черепаха оставляла за собой след (в виде линии).</p>
+                            <div class="theory__input">
+                                <span class="light__input">turtle.down() </span>
+                            </div>
+                            <p><span class="command__py">goto(x, y)</span>  – перемещение пера в точку с координатами (x,y).</p>
+                            <div class="theory__input">
+                                <span class="light__input">turtle.goto(100,75)</span>
+                            </div>
+                            <p><span class="command__py">color(цвет1,[цвет2])</span> – цвет пера и заливки.
+                            Если указан только один цвет, то цвет пера и цвет заливки совпадают, а если 2
+                            цвета через запятую, то первый – это цвет пера, а второй – цвет заливки.
+                            Допустимы два способа задания цвета: словесное название цвета и
+                            шестнадцатиричное обозначение цвета. При шестнадцатиричном обозначении в
+                            начало добавляется символ «#». </p>
+                            <div class="theory__input">
+                                <span class="light__input">turtle.color('red') <span class="comment"> # задали красный цвет пера</span> <br>
+                                turtle.color('blue') <span class="comment"> # задали синий цвет пера</span></span>
+                            </div>
+                            <p><span class="command__py">forward(шаг)</span>  перемещение вперед. Перемещает Черепаху вперед по
+                            аправлению стрелки или туловища Черепахи на количество точек, указанное в
+                            параметре шаг. Шаг может быть как целым числом, так и дробным.</p>
+                            <div class="theory__input">
+                                <span class="light__input">turtle.forward(50)<span class="comment"> # перемещение на 50 точек вперед</span>
+                                </span>
+                            </div>
+                            <p><span class="command__py">backward(шаг)</span>  – перемещение назад. Перемещает Черепаху в направлении,
+                            противоположном направлению стрелки или туловища Черепахи на количество
+                            точек, указанное в параметре шаг.</p>
+                            <div class="theory__input">
+                                <span class="light__input">turtle.backward(50) <span class="comment"> # перемещаем на 50 точек назад</span></span>
+                            </div>
+                            <p><span class="command__py">right(угол)</span> – поворот вправо. Поворачивает исполнителя вправо (по часовой
+                            стрелке) относительно направления его движения на значение, указанное в
+                            параметре угол. Угол по умолчанию измеряется в градусах.</p>
+                            <div class="theory__input">
+                                <span class="light__input">turtle.right(90) <span class="comment"> # поворот на 90 градусов по часовой стрелке</span></span>
+                            </div>
+                        </div>    
+                    </div>
+                    <img src="image/norm.png" alt="" title="Пример работы" class="theory__image" >
+                </div>
+                <div class="practishe">  
+                </div>
+                <div id="p2" class="test__action">
+                    <a href="test.html">ПРОЙТИ ТЕСТ</a>
+                </div>
+            </div>
+
+        </main>
+    </div>
+    <script src="js/script1.js"></script>
+</body>
+</html>

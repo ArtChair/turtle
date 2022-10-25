@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Привет</title>
+</head>
+<body>
+    <h1>Тест</h1>
+    <div class="practishe">
+        <div class="form__test">
+            <label for="test" class="input__text">Как поднять перо в Turtle?</label> 
+            <br>
+            <input type="text" name="test" id="" maxlength="20"  placeholder="Не забудь скобки" class="form__control input-en">
+            <button class="button__test">Ответить</button>
+        </div>    
+    </div>
+
+    <script src="js/script1.js"></script>
+    <script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+        $('body').on('input', '.input-en', function(){
+            this.value = this.value.replace(/[^a-z\s.()]/gi, '');
+        });
+    </script>
+</body>
+</html>
