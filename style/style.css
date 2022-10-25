@@ -16,7 +16,10 @@ body {
   /* padding: 0 15px; */
 }
 .menu {
-  padding: 20px 0;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .menu__list {
   display: flex;
@@ -67,7 +70,7 @@ body {
   font-size: 60px;
   letter-spacing: 3px;
   text-decoration: none;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   font-weight: bold;
   color: black;
   -webkit-transition: 200ms ease;
@@ -89,16 +92,21 @@ body {
   /* background-color: rgba(226, 184, 170, 0.486); */
 }
 .theory {
-  display: flex;
+  /* display: flex; */
+  display: grid;
 }
 .theory__text {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 50px 20px;
   font-size: 24px;
+  width: 95%;
 }
 .theory__image {
   margin-top: 73px;
   height: 400px;
+}
+.theory__other {
+  border: 2px solid black;
 }
 .bold-green {
   color: rgb(0, 160, 5);
