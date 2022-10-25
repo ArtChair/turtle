@@ -37,7 +37,6 @@ body {
   position: relative;
 }
 
-
 .menu__item::after {
   content: '';
   display: inline-block;
@@ -101,9 +100,13 @@ body {
   font-size: 24px;
   width: 95%;
 }
+.theory__img-body {
+  max-width: 400px;
+  float: right;
+  margin:  20px 0px 0px 0px;
+}
 .theory__image {
-  margin-top: 73px;
-  height: 400px;
+  
 }
 .theory__other {
   border: 2px solid black;
