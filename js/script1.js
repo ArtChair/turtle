@@ -1,14 +1,20 @@
 const test = document.querySelector('.form__control');
 const button = document.querySelector('.button__test');
+const result = document.querySelector('.fail');
 // const buttonValue = document.querySelector('.button__test');
 
 button.onclick = function () {
   console.log(test.value);
-  if (test.value == 'turtle.up()') {
+  if (test.value == 'up()') {
     test.style.border = '3px solid green';
-    alert('Все верно! Молодец')
+    result.innerHTML = `
+    <div>Верно!</div>
+    `
+    // result.style.margin = '-10px'
   } else {
     test.style.border = '3px solid red'
-    alert('Попробуй еще раз(')
+    result.innerHTML = `
+    <div>Неверно! попробуй еще раз</div>
+    `
   }
 }

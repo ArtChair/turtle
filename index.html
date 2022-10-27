@@ -17,7 +17,7 @@
             <div class="container">
                 <nav class="menu">
                     <div class="header__exercise">
-                        <a href="https://inf-ege.sdamgia.ru/test?theme=316" class="exercise">ЕГЭ</a> задание 6
+                        <a href="https://inf-ege.sdamgia.ru/test?theme=316" title="Решу Егэ" class="exercise">ЕГЭ</a> задание 6
                      </div>
                     <ul class="menu__list">
                         <li><a href="#p1" class="menu__item">Теория</a></li>
@@ -37,7 +37,6 @@
             <div class="container">
                 <div class="theory">
                     <div id="p1" class="theory__text" >
-                        
                         <p><span class="bold-green"> Turtle </span> это модуль для Питон, позволяющий создавать графические объекты, риснуки в специальном окне. Модуль <span class="bold-green">Turtle</span> можно использовать для создания игр на Питоне.</p>  
                         <p class="light">Для работы с исполнителем Черепаха сначала нужно подключить модуль <span class="bold-green"> Turtle</span></p>
                         <div class="theory__input">
@@ -48,7 +47,7 @@
                         </div>  
                         <p> На самом деле у этой команды более широкий функционал. Эта команда
                         выставляет Черепаху в начальное положение, сбрасывает все параметры на значения
-                        по умолчанию и стирает все, что было нарисовано до этого </p>
+                        по умолчанию и стирает все, что было нарисовано до этого. </p>
                         <p>Теперь, после запуска программы мы увидим окно «Python Turtle Graphics».
                         В центре окна будет отображаться перо в виде стрелки, повернутой вправо. Это
                         начальное положение исполнителя «Черепаха». Координаты точки (0,0). При
@@ -60,16 +59,16 @@
                             <p><span class="command__py"> up()</span> – поднять перо. Используется в случае, если необходимо переместить
                             Черепаху без оставления следа рисования.</p>
                             <div class="theory__input">
-                                <span class="light__input"> turtle.up() </span>
+                                <span class="light__input">up() </span>
                             </div>
                             <p><span class="command__py"> down()</span> – опустить перо. Используется для того, чтобы при перемещении
                             Черепаха оставляла за собой след (в виде линии).</p>
                             <div class="theory__input">
-                                <span class="light__input">turtle.down() </span>
+                                <span class="light__input">down() </span>
                             </div>
                             <p><span class="command__py">goto(x, y)</span>  – перемещение пера в точку с координатами (x,y).</p>
                             <div class="theory__input">
-                                <span class="light__input">turtle.goto(100,75)</span>
+                                <span class="light__input">goto(100,75)</span>
                             </div>
                             <p><span class="command__py">color(цвет1,[цвет2])</span> – цвет пера и заливки.
                             Если указан только один цвет, то цвет пера и цвет заливки совпадают, а если 2
@@ -78,29 +77,65 @@
                             шестнадцатиричное обозначение цвета. При шестнадцатиричном обозначении в
                             начало добавляется символ «#». </p>
                             <div class="theory__input">
-                                <span class="light__input">turtle.color('red') <span class="comment"> # задали красный цвет пера</span> <br>
-                                turtle.color('blue') <span class="comment"> # задали синий цвет пера</span></span>
+                                <span class="light__input">color('red') <span class="comment"> # задали красный цвет пера</span> <br>
+                                color('blue') <span class="comment"> # задали синий цвет пера</span></span>
                             </div>
                             <p><span class="command__py">forward(шаг)</span>  перемещение вперед. Перемещает Черепаху вперед по
                             аправлению стрелки или туловища Черепахи на количество точек, указанное в
                             параметре шаг. Шаг может быть как целым числом, так и дробным.</p>
                             <div class="theory__input">
-                                <span class="light__input">turtle.forward(50)<span class="comment"> # перемещение на 50 точек вперед</span>
+                                <span class="light__input">forward(50)<span class="comment"> # перемещение на 50 точек вперед</span>
                                 </span>
                             </div>
                             <p><span class="command__py">backward(шаг)</span>  – перемещение назад. Перемещает Черепаху в направлении,
                             противоположном направлению стрелки или туловища Черепахи на количество
                             точек, указанное в параметре шаг.</p>
                             <div class="theory__input">
-                                <span class="light__input">turtle.backward(50) <span class="comment"> # перемещаем на 50 точек назад</span></span>
+                                <span class="light__input">backward(50) <span class="comment"> # перемещаем на 50 точек назад</span></span>
                             </div>
                             <p><span class="command__py">right(угол)</span> – поворот вправо. Поворачивает исполнителя вправо (по часовой
                             стрелке) относительно направления его движения на значение, указанное в
                             параметре угол. Угол по умолчанию измеряется в градусах.</p>
                             <div class="theory__input">
-                                <span class="light__input">turtle.right(90) <span class="comment"> # поворот на 90 градусов по часовой стрелке</span></span>
+                                <span class="light__input">right(90) <span class="comment"> # поворот на 90 градусов по часовой стрелке</span></span>
+                            </div>
+                            <p><span class="command__py">left(угол)</span>– поворот влево. Поворачивает исполнителя влево (против часовой
+                            стрелки) относительно направления его движения на значение, указанное в
+                            параметре угол. Угол по умолчанию измеряется в градусах.</p>
+                            <div class="theory__input">
+                                <span class="light__input">left (90) <span class="comment"> # поворот на 90 градусов  против часовой стрелки</span></span>
+                            </div>
+                            <p><span class="command__py">dot([size],[color])</span>– рисует точку в текущей позиции Черепахи.
+                            Если параметры не указаны, то размер точки равен 1, цвет черный. Иначе размер
+                            и цвет берутся из параметров.</p>
+                            <div class="theory__input">
+                                <span class="light__input">dot(20, 'red') <span class="comment"> # красный круг с радиусом - 20</span></span>
+                            </div>
+                            <p><span class="command__py">circle(r)</span>– рисование окружности. Рисование окружности радиусом r из текущей
+                            позиции исполнителя. Радиус может быть как положительным, так и
+                            отрицательным числом. Если радиус положительный, то окружность рисуется
+                            против часовой стрелки, а если отрицательный, то по часовой стрелке.
+                                </p>
+                            <div class="theory__input">
+                                <span class="light__input">circle(-50) <span class="comment">  # рисуем окружность радиуса 50 по часовой стрелке </span></span>
+                            </div>
+                            <p><span class="command__py">begin_fill() ... end_fill()</span> – включение и выключение  закрашивания области.
+                            </p>
+                            <div class="theory__input">
+                                <span class="light__input">begin_fill() <span class="comment">   # включили режим закрашивания </span> <br> end_fill() <span class="comment">   # выключили режим закрашивания </span></span>
+                            </div>
+                            <p><span class="command__py">tracer(f, [delay]) </span> – отображение процесса рисования.
+                            </p>
+                            <div class="theory__input">
+                                <span class="light__input">tracer(0) <span class="comment">   # отключили режим трассировки закрашивания </span> <br> tracer(1) <span class="comment">    # включили режим трассировки </span></span>
                             </div>
                         </div>    
+                    </div>
+                    
+                        <div class="resh"> <a href="resh.html" target="_blank">Решить!</a></div>
+                        <div class="example__solution">
+
+                        </div>
                     </div>
                 </div>
                 <div class="practishe">  
