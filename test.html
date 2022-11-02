@@ -4,27 +4,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Привет</title>
+    <link rel="stylesheet" href="style/nullstyle.css">
+    <link rel="stylesheet" href="style/test-style.css">
+    <title>Тест</title>
 </head>
 <body>
-    <h1>Тест</h1>
-    <div class="practishe">
-        <div class="form__test">
-            <label for="test" class="input__text">Как поднять перо в Turtle?</label> 
-            <br>
-            <div class="fail">
-                
+    <div class="container">
+        <h1 class="body__title">Тест по <span class="bold-green">Turtle</span></h1>
+        <div class="quiz">
+            <div class="quiz__questions">
+                <div class="quiz__text">
+                    <label for="answ_1" class="questions__text">Как поднять перо в <span class="bold-green">Turtle?</span></label>
+                    <input name="answer_1" id="answ_1" type="text"  placeholder="Введите ответ"  class="questions__input q1">
+                    <div class="mistake"></div>
+                </div>    
+                <button class="check__answer btn">Проверить</button>
+            </div>   
+            <div class="quiz__questions">
+                <div class="quiz__text">
+                    <label for="answ_2" class="questions__text">Как опустить перо в <span class="bold-green">Turtle?</span></label>
+                    <input name="answer_2" id="answ_2" type="text"  placeholder="Введите ответ" class="questions__input q2">
+                    <div class="mistake1"></div>
+                </div>    
+                <button class="check__answer btn zero">Проверить</button>
+            </div> 
+            <div class="quiz__questions">
+                <div class="quiz__text">
+                    <label for="answ_3" class="questions__text">Как перенести перо в точку x= 100 и y=200? <span class="bold-green"></span></label>
+                    <input name="answer_2" id="answ_3" type="text"  placeholder="Введите ответ"  class="questions__input q3">
+                    <div class="mistake2"></div>
+                </div>    
+                <button class="check__answer btn one">Проверить</button>
+            </div> 
+            <div class="quiz__questions">
+                <div class="quiz__text">
+                    <label for="answ_4" class="questions__text">Как включить заливку <span class="bold-green">Turtle?</span></label>
+                    <input name="answer_3" id="answ_4" type="text"  placeholder="Введите ответ" class="questions__input q4">
+                    <div class="mistake3"></div>
+                </div>    
+                <button class="check__answer btn two">Проверить</button>
+            </div> 
+            <div class="quiz__questions">
+                <div class="quiz__text">
+                    <label for="answ_5" class="questions__text">Как нарисовать круг с радиусом 20? <span class="bold-green"></span></label>
+                    <input name="answer_4" id="answ_5" type="text"  placeholder="Введите ответ" class="questions__input q5">
+                    <div class="mistake4"></div>
+                </div>    
+                <button class="check__answer btn three">Проверить</button>
+            </div> 
+            <div class="quiz__questions">
+                <div class="quiz__text">
+                    <label for="answ_6" class="questions__text">Как переместить черепаху по направлению курсора? <span class="bold-green"></span></label>
+                    <input name="answer_5" id="answ_6" type="text"  placeholder="Введите ответ" class="questions__input q6">
+                    <div class="mistake5"></div>
+                </div>    
+                <button class="check__answer btn four">Проверить</button>
+            </div> 
+            <div class="quiz__questions">
+                <div class="quiz__text">
+                    <label for="answ_6" class="questions__text">Как выключить отображение процесса рисования?<span class="bold-green"></span></label>
+                    <input name="answer_6" id="answ_7" type="text"  placeholder="Введите ответ" class="questions__input q7">
+                    <div class="mistake6"></div>
+                </div>    
+                <button class="check__answer btn five">Проверить</button>
+            </div> 
+            <div class="quiz__questions hard">
+                <div class="quiz__text">
+                    <label for="answ_6" class="questions__text">Написать программу, которая нарисует <span class="red"> красный</span> круг с радиусом 11 <span class="light"> (отображение процесса рисования отключено!)</span></label>
+
+
+                    <input name="answer_6" id="answ_str" type="text"  placeholder="Введите ответ" class="questions__input q7 str0">
+                    <input name="answer_6" id="answ_str" type="text"  placeholder="Введите ответ" class="questions__input q7 str1">
+                    <input name="answer_6" id="answ_str" type="text"  placeholder="Введите ответ" class="questions__input q7 str2">
+                    <input name="answer_6" id="answ_str" type="text"  placeholder="Введите ответ" class="questions__input q7 str3">
+                    <input name="answer_6" id="answ_str" type="text"  placeholder="Введите ответ" class="questions__input q7 str4">
+                    <input name="answer_6" id="answ_str" type="text"  placeholder="Введите ответ" class="questions__input q7 str5">
+                    <div class="mistakeStr"></div>
+                </div>    
+                <button class="check__answer btn strcheck">Проверить</button>
             </div>
-            <input type="text" name="test" id="" maxlength="20"  placeholder="Не забудь скобки" class="form__control input-en">
-            <button class="button__test">Ответить</button>
-        </div>    
+            <div class="quiz__results">
+              Результат: <span class="result__active"></span>/8
+            </div>
+        </div>
     </div>
     <script src="js/script1.js"></script>
-    <script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
-    <script>
-    $('body').on('input', '.input-en', function(){
-        this.value = this.value.replace(/[^a-z\s.()]/gi, '');
-    });
-    </script>
+
 </body>
 </html>

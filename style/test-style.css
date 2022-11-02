@@ -1,0 +1,101 @@
+body {
+    background-color: rgb(218, 218, 218);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container {
+    max-width: 1290px;
+    margin: 0 auto;
+    background-color: rgb(177, 176, 176);
+}
+.body__title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.quiz {
+    width: 100%;
+    margin: 0 auto;
+}
+.quiz__questions {
+    /* margin: 0 auto; */
+    margin-bottom: 40px;
+    /* width: 100%; */
+    /* max-width: 640px; */
+    border: 2px solid black;
+}
+.questions__text {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    text-align: center;
+}
+.questions__input {
+    width: 300px;
+    height: 50px;
+    border-radius: 6px;
+    padding-left: 10px;
+    border: none;
+}
+.questions__input:focus {
+    border: 3px solid black;
+}
+.quiz__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+.bold-green {
+    color: rgb(0, 160, 5);
+    font-weight: 600;
+}
+.check__answer {
+    margin: 15px 0 0 88px;
+}
+.btn {
+    text-decoration: none;
+    display: inline-block;
+    width: 140px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 45px;
+    margin: 10px 38%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #524f4e;
+    background: white;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+    transition: .3s;
+    cursor: pointer;
+    border: none;
+}
+.btn:hover {
+    background: #2EE59D;
+    box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+    color: white;
+}
+.quiz__results {
+    font-size: 30px;
+    text-align: center;
+}
+.result__active {
+    color: red;
+}
+.red {
+    color: red;
+    font-weight: 700;
+}
+.light {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+}
+.hard .questions__input:focus {
+    border: none;
+}
+.hard .questions__input {
+    border-radius: 0;
+}

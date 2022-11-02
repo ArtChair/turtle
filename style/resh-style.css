@@ -1,6 +1,30 @@
 .container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin-left: 8%;
+    /* margin: 0 auto; */
+}
+.aside__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: fixed;
+    margin-left: 88%;
+}
+.aside__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    margin-top: 43px;
+}
+.aside__menu a {
+    text-decoration: none;
+    color: #476661;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.aside__menu a:hover{
+    text-decoration: underline;
 }
 .theory__example {
     /* border: 2px solid black; */
@@ -12,7 +36,7 @@
 }
 .example__exercise {
     background-color: #eeeeee;
-    padding: 20px 20px 10px 20px;
+    padding: 10px 20px 10px 20px;
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
     border-radius: 7px;
@@ -22,23 +46,50 @@
 .resh {
     text-align: center;
 }
-.block__textarea {
-    padding: 30px;
-    position: relative;
+.button__answer {
+    line-height: 40px;
+    letter-spacing: 2px;
+    border: none;
+    padding: 0 20px;
+    background-image: linear-gradient(to right, #808382 0%, #9897a1 51%, #476661 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);  
+    border-radius: 10px;
+    transition: 0.7s;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 20px;
+    cursor: pointer;
+    
 }
-.test__textarea {
-    display: flex;
-    justify-content: center;
-    width: 100%; 
-    height: 200px;
-    resize: none;
+.button__answer:hover {
+    background-position: right;
 }
-.title__textarea {
-    font-size: 25px;
+.text__answer {
+    display: none;
+    padding-left: 10px;
+    border-radius: 3px;
+    background-color: #c7c7c7;
+    margin-bottom: 30px;
 }
-.submit__textarea {
-    padding: 0px 20px;
-    position: absolute;
-    bottom: 0;
-    right: 30px;
+._active {
+    display: block;
+}
+
+.py {
+    letter-spacing: 1px;
+}
+.left {
+    margin-left: 27px;
+}
+.leftTwo {
+    margin-left: 54px;
+}
+.colorRed {
+    color: red;
+    font-weight: 700;
 }
