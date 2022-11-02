@@ -186,9 +186,25 @@ body {
   margin: 0 auto;
 }
 .resh {
-  text-align: center;
+  /* text-align: center; */
 }
-.example__solution {
+.posa {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-transform: uppercase;  
+
+}
+.toresh {
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #545454;  
+  transition: all 600ms ease;
+}
+.toresh:hover {
+  text-decoration: underline;
 }
 
 
@@ -206,7 +222,4 @@ body {
   text-align: center;
 }
 
-.test__action {
-  text-align: center;
-}
 /* -------------- */
