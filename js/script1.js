@@ -80,10 +80,6 @@ button.onclick = function() {
         mistake.innerHTML = '<div>Все верно!</div> ';
         mistake.style.color = 'green';
         mistake.style.fontWeight = '600';
-        if (sum == 8) {
-            alert(`Ты ответил на все вопросы!!
-            Твой результат: ${sum} /10`);
-        }
     }
     else {
         console.log('неверно');
@@ -113,10 +109,6 @@ buttonOne.onclick = function() {
         mistakeOne.innerHTML = '<div>Все верно!</div> ';
         mistakeOne.style.color = 'green';
         mistakeOne.style.fontWeight = '600';
-        if (sum == 8) {
-            alert(`Ты ответил на все вопросы!!
-            Твой результат: ${sum} /10`);
-        }
     }
     else {
         console.log('неверно');
@@ -146,10 +138,6 @@ buttonTwo.onclick = function() {
         mistakeTwo.innerHTML = '<div>Все верно!</div> ';
         mistakeTwo.style.color = 'green';
         mistakeTwo.style.fontWeight = '600';
-        if (sum == 8) {
-            alert(`Ты ответил на все вопросы!!
-            Твой результат: ${sum} /10`);
-        }
     }
     else {
         console.log('неверно');
@@ -178,10 +166,6 @@ buttonThree.onclick = function() {
         mistakeThree.innerHTML = '<div>Все верно!</div> ';
         mistakeThree.style.color = 'green';
         mistakeThree.style.fontWeight = '600';
-        if (sum == 8) {
-            alert(`Ты ответил на все вопросы!!
-            Твой результат: ${sum} /10`);
-        }
     }
     else {
         console.log('неверно');
@@ -211,10 +195,6 @@ buttonFour.onclick = function() {
         mistakeFour.innerHTML = '<div>Все верно!</div> ';
         mistakeFour.style.color = 'green';
         mistakeFour.style.fontWeight = '600';
-        if (sum == 8) {
-            alert(`Ты ответил на все вопросы!!
-            Твой результат: ${sum} /10`);
-        }
     }
     else {
         console.log('неверно');
@@ -244,10 +224,6 @@ buttonFive.onclick = function() {
         mistakeFive.innerHTML = '<div>Все верно!</div> ';
         mistakeFive.style.color = 'green';
         mistakeFive.style.fontWeight = '600';
-        if (sum == 8) {
-            alert(`Ты ответил на все вопросы!!
-            Твой результат: ${sum} /10`);
-        }
     }
     else {
         console.log('неверно')
@@ -277,10 +253,6 @@ buttonSix.onclick = function() {
         mistakeSix.innerHTML = '<div>Все верно!</div> ';
         mistakeSix.style.color = 'green';
         mistakeSix.style.fontWeight = '600';
-        if (sum == 8) {
-            alert(`Ты ответил на все вопросы!!
-            Твой результат: ${sum} /10`);
-        }
     }
     else {
         console.log('неверно');
@@ -312,10 +284,6 @@ buttonStr.onclick = () => {
         sum += 1;
         console.log(sum);
         resultActive.innerHTML = sum;
-        if (sum == 8) {
-            alert(`Ты ответил на все вопросы!!
-            Твой результат: ${sum} /10`);
-        }
     }
     else {
         console.log('Ввели неверно')
@@ -332,7 +300,7 @@ buttonStr.onclick = () => {
 }
 
 buttonStr1.onclick = () => {
-    if(xstr0.value == 'from turtle import *' && xstr1.value == 'k=15' && xstr2.value == `for x in range(6):` && xstr3.value == '      forward(10 * k)' &&  xstr4.value == '      right(60)' && xstr5.value == 'tracer(0)') {
+    if(xstr0.value == 'from turtle import *' && xstr1.value == 'k=15' && xstr2.value == `for x in range(6):` && xstr3.value == '     forward(10 * k)' &&  xstr4.value == '     right(60)' && xstr5.value == 'tracer(0)') {
         console.log('Ввели верно')
         // inputOne.setAttribute('disabled', true);
         buttonStr1.setAttribute('disabled', true);
@@ -345,13 +313,9 @@ buttonStr1.onclick = () => {
             console.log(xinputStr[a])        
             xinputStr[a].style.opacity = '0.5';
         }
-        sum += 1;
+        sum += 1.1;
         console.log(sum);
         resultActive.innerHTML = sum;
-        if (sum == 8) {
-            alert(`Ты ответил на все вопросы!!
-            Твой результат: ${sum} /10`);
-        }
     } 
     else {
         console.log('Ввели неверно')

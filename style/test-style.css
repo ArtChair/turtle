@@ -20,10 +20,9 @@ body {
     margin: 0 auto;
 }
 .quiz__questions {
-    /* margin: 0 auto; */
-    margin-bottom: 40px;
+    margin: 0 auto;
     /* width: 100%; */
-    /* max-width: 640px; */
+    max-width: 840px;
     border: 2px solid black;
 }
 .questions__text {
@@ -135,3 +134,34 @@ body {
     height: 300px;
     overflow-y: scroll;
 } */
+
+
+
+@media (max-width: 400px) {
+    body {
+        width: 100%;
+    }
+    .btn {
+        margin: 10px 100px;
+    }
+    .body__title {
+        font-size: 2.6em;
+    }
+}
+@media (max-width: 330px) {
+    .btn {
+        margin: 10px 80px;
+    }
+    .num__input {
+        position: relative;
+    }
+    .bigNum {
+        position: absolute;
+        top: 8px;
+        left: 3px;
+        color: aquamarine;
+    }
+    .body__title {
+        font-size: 2.7em;
+    }
+}

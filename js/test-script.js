@@ -1,14 +1,28 @@
 
 const buttonShowAnswer = document.querySelector('.button__answer');
+const buttonShowAnswer1 = document.querySelector('.btn');
+const buttonShowAnswer2 = document.querySelector('.btn1');
+
 const showAnswer = document.querySelector('.text__answer');
+const showAnswer1 = document.querySelector('.text__answer1');
+const showAnswer2 = document.querySelector('.text__answer2');
+
+
+buttonShowAnswer.addEventListener("click", () => {
+    showAnswer.classList.toggle('_active'); 
+}) 
 
 
 
-buttonShowAnswer.onclick = () => {
-    showAnswer.classList.toggle('_active');
+buttonShowAnswer1.onclick = () => {
+    showAnswer1.classList.toggle('_active'); 
 }
 
 
+
+buttonShowAnswer2.onclick = () => {
+    showAnswer2.classList.toggle('_active'); 
+}
 
 
 // -----ANSWER----------

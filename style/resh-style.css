@@ -1,6 +1,7 @@
 .container {
     max-width: 1200px;
     margin-left: 8%;
+    height: 2000px;
     /* margin: 0 auto; */
 }
 .aside__menu {
@@ -41,7 +42,7 @@
     font-size: 20px;
     border-radius: 7px;
     width: 100%;
-    margin: 0 auto;
+    margin-top: 30px;
   }
 .resh {
     text-align: center;
@@ -62,7 +63,6 @@
     color: #fff;
     font-weight: 500;
     font-size: 14px;
-    margin-top: 20px;
     cursor: pointer;
     
 }
@@ -79,7 +79,9 @@
 ._active {
     display: block;
 }
-
+._active1 {
+    display: block;
+}
 .py {
     letter-spacing: 1px;
 }

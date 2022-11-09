@@ -13,16 +13,16 @@
 <body>
     <aside class="aside__menu">
         <div class="aside__content">
-            <a href="#ex1">Задание № <span>Число</span></a>
-            <a href="#ex2">Задание № <span>Число</span></a>
-            <a href="">Задание № <span>Число</span></a>
+            <a href="#ex1">Задание № <span style="color : red">1</span></a>
+            <a href="#ex2">Задание № <span style="color : red">2</span></a>
+            <a href="#ex3">Задание № <span style="color : red">3</span></a>
         </div>
     </aside>
     <div class="container">
         <h1 style="text-align: center;">ТРЕНИРОВОЧНЫЕ ЗАДАНИЯ</h1>
         <div class="test__hard">
             <div class="theory__example">
-                <div id="ex1" class="example__exercise">
+            <div id="ex1" class="example__exercise">
                     <p>Исполнитель Черепаха действует на плоскости с декартовой системой координат. В начальный момент Черепаха находится в начале координат, её голова направлена вдоль положительного направления оси ординат, хвост опущен. При опущенном хвосте Черепаха оставляет на поле след в виде линии. В каждый конкретный момент известно положение исполнителя и направление его движения. У исполнителя существует две команды: <strong> Вперёд <i>n</i></strong> (где <i> n</i> — целое число), вызывающая передвижение Черепахи на n единиц в том направлении, куда указывает её голова, и <strong> Направо <i>m</i></strong> (где <i> m</i> — целое число), вызывающая изменение направления движения на m градусов по часовой стрелке. Запись
                         <br>
                    <strong> &nbsp; Повтори k [Команда1 Команда2 … КомандаS]</strong>
@@ -32,12 +32,12 @@
                     <strong> &nbsp; Повтори 6 [Вперёд 10 Направо 60] </strong>
                         <br>
                     Определите, сколько точек с целочисленными координатами будут находиться внутри области, ограниченной линией, заданной данным алгоритмом. Точки на линии учитывать следует.</p>
-                </div>
+            </div>
             </div>  
             <div class="block__answer">
                 <button class="button__answer">Узнать ответ</button>
                     <div class="text__answer">
-                        <span class="py"><span class="colorRed"> import turtle *</span></span> <br>
+                        <span class="py"><span class="colorRed"> from turtle import *</span></span> <br>
                         <span class="py">k = 15</span> <br>
                         <span class="py">left(90)</span> <br>
                         <span class="py">speed(10)</span> <br>
@@ -64,9 +64,68 @@
                     <br>
                 Определите, сколько точек с целочисленными координатами будут находиться внутри области, ограниченной линией, заданной данным алгоритмом. Точки на линии учитывать следует.</p>
             </div>
+            <div class="block__answer">
+                <button class="button__answer btn">Узнать ответ</button>
+                    <div class="text__answer text__answer1">
+                        <span class="py"><span class="colorRed"> import turtle *</span></span> <br>
+                        <span class="py">k = 15</span> <br>
+                        <span class="py">left(90)</span> <br>
+                        <span class="py">speed(10)</span> <br>
+                        <span class="py"><span class="colorRed">for</span> i <span class="colorRed">in</span> range(6):</span> <br>
+                        <span class="py left">forward(10 * k)</span> <br>
+                        <span class="py left">right(60)</span> <br>
+                        <span class="py">up()</span> <br>
+                        <span class="py"><span class="colorRed">for</span> x <span class="colorRed">in</span> range(19, -10, - 1):</span> <br>
+                        <span class="py left"><span class="colorRed">for</span> y <span class="colorRed">in</span> range(20, -10, - 1):</span> <br>
+                        <span class="py leftTwo">goto(x * k, y * k)</span> <br>
+                        <span class="py leftTwo">dot(4)</span> <br>
+                        <span class="py">done()</span> <br>
+                        <span class="color">Ответ: 253</span>
+                    </div>
+            </div>  
+            <div id="ex3" class="example__exercise">
+                <p>Исполнитель Черепаха действует на плоскости с декартовой системой координат. В начальный момент Черепаха находится в начале координат, её голова направлена вдоль положительного направления оси ординат, хвост опущен. При опущенном хвосте Черепаха оставляет на поле след в виде линии. В каждый конкретный момент известно положение исполнителя и направление его движения. У исполнителя существует две команды: <strong> Вперёд <i>n</i></strong> (где <i> n</i> — целое число), вызывающая передвижение Черепахи на n единиц в том направлении, куда указывает её голова, и <strong> Направо <i>m</i></strong> (где <i> m</i> — целое число), вызывающая изменение направления движения на m градусов по часовой стрелке. Запись
+                    <br>
+               <strong> &nbsp; Повтори k [Команда1 Команда2 … КомандаS]</strong>
+                    <br>
+                означает, что последовательность из S команд повторится k раз. Черепахе был дан для исполнения следующий алгоритм:
+                    <br>
+                <strong> &nbsp; Повтори 6 [Вперёд 10 Направо 60] </strong>
+                    <br>
+                Определите, сколько точек с целочисленными координатами будут находиться внутри области, ограниченной линией, заданной данным алгоритмом. Точки на линии учитывать следует.</p>
+            </div>
+            <div class="block__answer">
+                <button class="button__answer btn1">Узнать ответ</button>
+                    <div class="text__answer text__answer2">
+                        <span class="py"><span class="colorRed"> import turtle *</span></span> <br>
+                        <span class="py">k = 15</span> <br>
+                        <span class="py">left(90)</span> <br>
+                        <span class="py">speed(10)</span> <br>
+                        <span class="py"><span class="colorRed">for</span> i <span class="colorRed">in</span> range(6):</span> <br>
+                        <span class="py left">forward(10 * k)</span> <br>
+                        <span class="py left">right(60)</span> <br>
+                        <span class="py">up()</span> <br>
+                        <span class="py"><span class="colorRed">for</span> x <span class="colorRed">in</span> range(19, -10, - 1):</span> <br>
+                        <span class="py left"><span class="colorRed">for</span> y <span class="colorRed">in</span> range(20, -10, - 1):</span> <br>
+                        <span class="py leftTwo">goto(x * k, y * k)</span> <br>
+                        <span class="py leftTwo">dot(4)</span> <br>
+                        <span class="py">done()</span> <br>
+                        <span class="color">Ответ: 253</span>
+                    </div>
+            </div>  
         </div>  
-        </div>
     </div>
     <script src="js/test-script.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+           $(".aside__menu").on("click","a", function (event) {
+               event.preventDefault();
+               var id  = $(this).attr('href'),
+                   top = $(id).offset().top;
+               $('body,html').animate({scrollTop: top}, 600);
+           });
+       });
+    </script>
 </body>
 </html>
