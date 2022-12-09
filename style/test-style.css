@@ -43,9 +43,6 @@ body {
     font-family: 'Roboto Mono', monospace;
     /* cursor: default; */
 }
-.questions__input:focus {
-    border: 3px solid black;
-}
 .quiz__text {
     display: flex;
     flex-direction: column;

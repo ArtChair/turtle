@@ -3,7 +3,14 @@
     margin-left: 8%;
     height: 2000px;
     /* margin: 0 auto; */
+    display: flex;
+    flex-direction: column;
 }
+.title-href {
+    max-width: 500px;
+    margin: 30px 0px 15px 50px;
+}
+
 .aside__menu {
     display: flex;
     flex-direction: column;
@@ -26,6 +33,9 @@
 }
 .aside__menu a:hover{
     text-decoration: underline;
+}
+.test__hard {
+    flex: 1 0 auto;
 }
 .theory__example {
     /* border: 2px solid black; */
@@ -94,4 +104,22 @@
 .colorRed {
     color: red;
     font-weight: 700;
+}
+.footer {
+    flex: 0 0 auto;
+    background-color: rgb(69, 67, 67);
+    height: 100px;
+}
+.title-href {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 1.6em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.footer__title-href {
+    text-decoration: none;
+    color: #808382;
+}
+.footer__title-href:hover {
+    text-decoration: underline;
 }

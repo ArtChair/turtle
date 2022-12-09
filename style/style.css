@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,300&family=DM+Sans&family=Libre+Franklin&family=Montserrat+Alternates:wght@200;300&family=Montserrat:ital@1&family=Open+Sans:wght@500;600&family=Roboto+Condensed&family=Source+Serif+Pro&family=Tenor+Sans&display=swap');
 
 body {
-  background: linear-gradient(45deg, #EECFBA, #C5DDE8);
+  /* background: linear-gradient(45deg, #ebd4c5, #C5DDE8); */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .wrapper {
   min-height: 100%;
   overflow: hidden;
 
 }
-
+.header {
+  background: linear-gradient(180deg, rgba(90, 146, 8, 0.62) 0%, rgba(90, 146, 8, 0.62) 0%);
+  /* filter: blur(1px); */
+}
 .container {
   max-width: 1460px;
   margin: 0 auto;
@@ -58,7 +62,6 @@ body {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 50px;
   text-align: center;
-  margin-top: 20px;
   color: rgb(202, 202, 5);
 
 }
@@ -80,7 +83,7 @@ body {
   text-decoration: underline;
 }
 .turtle {
-  color: rgb(0, 255, 8);
+  color: rgb(0, 149, 5);
   text-transform: uppercase;
 }
 
@@ -88,7 +91,8 @@ body {
 /* --------------------------МЭЙН-------------------------------------------- */
 
 .main {
-  /* background-color: rgba(226, 184, 170, 0.486); */
+  /* background: linear-gradient(45deg, #ebd4c5, #C5DDE8); */
+  background: linear-gradient(180deg, rgba(90, 146, 8, 0.62) 0%, rgba(104, 143, 25, 0.499) 37.89%, rgba(167, 229, 43, 0.464) 44.06%, rgba(96, 133, 22, 0.574) 100%);
 }
 .theory {
   /* display: flex; */
@@ -96,9 +100,9 @@ body {
 }
 .theory__text {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding: 50px 0px;
+  padding: 40px 0px;
   font-size: 24px;
-  width: 95%;
+  width: 98%;
   margin: 0 auto;
 }
 .theory__img-body {
@@ -106,8 +110,8 @@ body {
   float: right;
   margin:  20px 0px 0px 0px;
 }
-.theory__image {
-  
+.theory__image2 {
+  display: none;
 }
 .theory__other {
   border: 2px solid black;
@@ -129,6 +133,7 @@ body {
   background-color: rgb(255, 221, 169);
   border: 2px solid black;
   display: flex;
+  opacity: 0.7;
 }
 .theory__img-block {
 }
@@ -136,7 +141,7 @@ body {
   display: flex;
 }
 .red {
-  color: red;
+  color: rgb(255, 0, 0);
   opacity: 1;
 }
 .light__input {
@@ -160,7 +165,8 @@ body {
 }
 .command__py {
   font-size: 2.5rem;
-  color: #BA2121;
+  color: #ff0000b9;
+  font-weight: bold;
 }
 .comment {
   color: rgb(130, 130, 130);

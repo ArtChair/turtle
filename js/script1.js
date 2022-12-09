@@ -70,7 +70,7 @@ button.onclick = function() {
     // console.log(answerTwo.value);
     if (answerTwo.value == 'up()') {
         console.log('верно');
-        sum += 0.42857142857;
+        sum += 5;
         console.log(sum);
         resultActive.innerHTML = sum;
         inputOne.setAttribute('disabled', true);
@@ -89,9 +89,12 @@ button.onclick = function() {
     }
     if (answerTwo.value == ''){
         console.log('Введите что-нибудь')
-        mistake.innerHTML = '<div>Ты ничего не ввел</div> ';
+
+        mistake.innerHTML = '<div>Ты ничего не ввел</div> ';  
+
         mistake.style.color = 'red';
         mistake.style.fontWeight = '600';
+        
     }
 }
 buttonOne.onclick = function() {
@@ -99,7 +102,8 @@ buttonOne.onclick = function() {
     // console.log(answerTwo.value);
     if (answerThree.value == 'down()') {
         console.log('верно');
-        sum += 0.42857142857;
+        sum += 5
+        ;
         console.log(sum);
         resultActive.innerHTML = sum;
         inputTwo.setAttribute('disabled', true);
@@ -118,7 +122,8 @@ buttonOne.onclick = function() {
     }
     if (answerThree.value == ''){
         console.log('Введите что-нибудь');
-        mistakeOne.innerHTML = '<div>Ты ничего не ввел</div> ';
+        mistakeOne.innerHTML = '<div>Ты ничего не ввел</div> ';  
+
         mistakeOne.style.color = 'red';
         mistakeOne.style.fontWeight = '600';
     }
@@ -128,7 +133,7 @@ buttonTwo.onclick = function() {
     // console.log(answerTwo.value);
     if (answerFour.value == 'goto(100,200)' || answerFour.value == 'goto(100, 200)') {
         console.log('верно');
-        sum += 0.42857142857;
+        sum += 5;
         console.log(sum);
         resultActive.innerHTML = sum;
         inputThree.setAttribute('disabled', true);
@@ -147,7 +152,8 @@ buttonTwo.onclick = function() {
     }
     if (answerFour.value == ''){
         console.log('Введите что-нибудь');
-        mistakeTwo.innerHTML = '<div>Ты ничего не ввел</div> ';
+        mistakeTwo.innerHTML = '<div>Ты ничего не ввел</div> ';  
+
         mistakeTwo.style.color = 'red';
     }
 }
@@ -156,7 +162,7 @@ buttonThree.onclick = function() {
     // console.log(answerTwo.value);
     if (answerFive.value == 'begin_fill()') {
         console.log('верно');
-        sum += 0.42857142857;
+        sum += 5;
         console.log(sum);
         resultActive.innerHTML = sum;
         buttonThree.setAttribute('disabled', true);
@@ -175,7 +181,8 @@ buttonThree.onclick = function() {
     }
     if (answerFive.value == ''){
         console.log('Введите что-нибудь');
-        mistakeThree.innerHTML = '<div>Ты ничего не ввел</div> ';
+        mistakeThree.innerHTML = '<div>Ты ничего не ввел</div> ';  
+
         mistakeThree.style.color = 'red';
         mistakeThree.style.fontWeight = '600';
     }
@@ -185,7 +192,7 @@ buttonFour.onclick = function() {
     // console.log(answerTwo.value);
     if (answerSix.value == 'circle(20)') {
         console.log('верно');
-        sum += 0.42857142857;
+        sum += 5;
         console.log(sum);
         resultActive.innerHTML = sum;
         buttonFour.setAttribute('disabled', true);
@@ -204,7 +211,7 @@ buttonFour.onclick = function() {
     }
     if (answerSix.value == ''){
         console.log('Введите что-нибудь')
-        mistakeFour.innerHTML = '<div>Ты ничего не ввел</div> ';
+        mistakeFour.innerHTML = '<div>Ты ничего не ввел</div> ';  
         mistakeFour.style.color = 'red';
         mistakeFour.style.fontWeight = '600';
     }
@@ -214,7 +221,7 @@ buttonFive.onclick = function() {
     // console.log(answerTwo.value);
     if (answerSeven.value == 'forward()') {
         console.log('верно');
-        sum += 0.42857142857;
+        sum += 5;
         console.log(sum);
         resultActive.innerHTML = sum;
         buttonFive.setAttribute('disabled', true);
@@ -233,7 +240,8 @@ buttonFive.onclick = function() {
     }
     if (answerSeven.value == ''){
         console.log('Введите что-нибудь')
-        mistakeFive.innerHTML = '<div>Ты ничего не ввел</div> ';
+        mistakeFive.innerHTML = '<div>Ты ничего не ввел</div> ';  
+
         mistakeFive.style.color = 'red';
         mistakeFive.style.fontWeight = '600';
     }
@@ -243,7 +251,7 @@ buttonSix.onclick = function() {
     // console.log(answerTwo.value);
     if (answerEight.value == 'tracer(0)') {
         console.log('верно');
-        sum += 0.42857142857;
+        sum += 5;
         console.log(sum);
         resultActive.innerHTML = sum;
         buttonSix.setAttribute('disabled', true);
@@ -262,7 +270,8 @@ buttonSix.onclick = function() {
     }
     if (answerEight.value == ''){
         console.log('Введите что-нибудь')
-        mistakeSix.innerHTML = '<div>Ты ничего не ввел</div> ';
+        mistakeSix.innerHTML = '<div>Ты ничего не ввел</div> ';  
+
         mistakeSix.style.color = 'red';
         mistakeSix.style.fontWeight = '600';
     }
@@ -281,7 +290,7 @@ buttonStr.onclick = () => {
             inputStr[a].style.opacity = '0.5';
             console.log(inputStr[a])
         }
-        sum += 1;
+        sum += 10;
         console.log(sum);
         resultActive.innerHTML = sum;
     }
@@ -293,12 +302,12 @@ buttonStr.onclick = () => {
     }
     if(answ0.value == '' && answ1.value == '' && answ2.value == '' && answ3.value == '' && answ4.value == '' && answ5.value == '' ){
         console.log('Введите что-нибудь')
-        mistakeStr.innerHTML = '<div>Ты ничего не ввел</div> ';
+        mistakeStr.innerHTML = '<div>Ты ничего не ввел</div> ';  
+
         mistakeStr.style.color = 'red';
         mistakeStr.style.fontWeight = '600';
     }
 }
-
 buttonStr1.onclick = () => {
     if(xstr0.value == 'from turtle import *' && xstr1.value == 'k=15' && xstr2.value == `for x in range(6):` && xstr3.value == '     forward(10 * k)' &&  xstr4.value == '     right(60)' && xstr5.value == 'tracer(0)') {
         console.log('Ввели верно')
@@ -313,9 +322,9 @@ buttonStr1.onclick = () => {
             console.log(xinputStr[a])        
             xinputStr[a].style.opacity = '0.5';
         }
-        sum += 1.1;
+        sum += 10;
         console.log(sum);
-        resultActive.innerHTML = sum;
+        resultActive.innerHTML =  Math.round(sum);
     } 
     else {
         console.log('Ввели неверно')
@@ -325,7 +334,8 @@ buttonStr1.onclick = () => {
     }
     if(xstr0.value == '' && xstr1.value == '' && xstr2.value == '' && xstr3.value == '' &&  xstr4.value == '' && xstr5.value == ''){
         console.log('Введите что-нибудь')
-        mistakeStr1.innerHTML = '<div>Ты ничего не ввел</div> ';
+        mistakeStr1.innerHTML = '<div>Ты ничего не ввел</div> ';  
+
         mistakeStr1.style.color = 'red';
         mistakeStr1.style.fontWeight = '600';
     }

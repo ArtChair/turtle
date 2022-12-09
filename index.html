@@ -17,7 +17,7 @@
             <div class="container">
                 <nav class="menu">
                     <div class="header__exercise">
-                        <a href="https://inf-ege.sdamgia.ru/test?theme=316" title="Решу Егэ" class="exercise">ЕГЭ</a> задание 6
+                        Решу <a href="https://inf-ege.sdamgia.ru/test?theme=316" title="Решу Егэ" class="exercise">ЕГЭ</a>
                      </div>
                     <ul class="menu__list">
                         <li><a href="#p1" class="menu__item">Теория</a></li>
@@ -26,9 +26,6 @@
                     </ul>
                 </nav>
                 <div class="header__info">
-                    <!-- <div class="header__exercise">
-                       <a href="https://inf-ege.sdamgia.ru/test?theme=316" class="exercise">ЕГЭ</a> задание 6
-                    </div> -->
                     <h1 class="header__title">Модуль <span class="turtle">Turtle</span> </h1>
                 </div>
             </div>
@@ -43,7 +40,8 @@
                            <span class="light__input"> from turtle import <span class="red"> * </span></span>
                         </div>
                         <div class="theory__img-body">
-                            <img src="image/norm.png" alt="" title="Пример работы" class="theory__image" >
+                            <img src="image/gif1.jpg" alt="" title="Пример работы" class="theory__image" >
+                            <img src="image/gif2.jpg" alt="" title="Пример работы" class="theory__image2" >
                         </div>  
                         <p> На самом деле у этой команды более широкий функционал. Эта команда
                         выставляет Черепаху в начальное положение, сбрасывает все параметры на значения
@@ -59,16 +57,16 @@
                             <p><span class="command__py"> up()</span> – поднять перо. Используется в случае, если необходимо переместить
                             Черепаху без оставления следа рисования.</p>
                             <div class="theory__input">
-                                <span class="light__input">up() </span>
+                                <span class="light__input">up() <span class="comment"> # подняли перо</span></span>
                             </div>
                             <p><span class="command__py"> down()</span> – опустить перо. Используется для того, чтобы при перемещении
                             Черепаха оставляла за собой след (в виде линии).</p>
                             <div class="theory__input">
-                                <span class="light__input">down() </span>
+                                <span class="light__input">down() <span class="comment"> # опустили перо</span></span>
                             </div>
                             <p><span class="command__py">goto(x, y)</span>  – перемещение пера в точку с координатами (x,y).</p>
                             <div class="theory__input">
-                                <span class="light__input">goto(100,75)</span>
+                                <span class="light__input">goto(100,75) <span class="comment"> # переместили перо в точку x = 100, y = 75</span></span>
                             </div>
                             <p><span class="command__py">color(цвет1,[цвет2])</span> – цвет пера и заливки.
                             Если указан только один цвет, то цвет пера и цвет заливки совпадают, а если 2
@@ -122,7 +120,8 @@
                             <p><span class="command__py">begin_fill() ... end_fill()</span> – включение и выключение  закрашивания области.
                             </p>
                             <div class="theory__input">
-                                <span class="light__input">begin_fill() <span class="comment">   # включили режим закрашивания </span> <br> end_fill() <span class="comment">   # выключили режим закрашивания </span></span>
+                                <span class="light__input">begin_fill() <span class="comment">   # включили режим закрашивания </span> <br> <span>. . .</span>
+                                 <br> end_fill() <span class="comment">   # выключили режим закрашивания </span></span>
                             </div>
                             <p><span class="command__py">tracer(f, [delay]) </span> – отображение процесса рисования.
                             </p>
@@ -143,6 +142,17 @@
 
         </main>
     </div>
-    <script src="js/script1.js"></script>
+    <script src="js/script2.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+           $(".menu__list").on("click","a", function (event) {
+               event.preventDefault();
+               var id  = $(this).attr('href'),
+                   top = $(id).offset().top;
+               $('body,html').animate({scrollTop: top}, 600);
+           });
+       });
+    </script>
 </body>
 </html>
